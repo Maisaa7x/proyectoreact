@@ -25,13 +25,7 @@ function BootNavBar() {
       </ul>
         </div>
         </div>
-            <div ClassName="container-fluid navbar navbar-light bg-light">
-                <a ClassName="navbar-brand">Navbar</a>
-                <form ClassName="d-flex">
-                    <input ClassName="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button ClassName="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+        <button type="button" class="btn btn-primary">Carrito</button>
         </nav>
     )
 }
