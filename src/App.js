@@ -1,9 +1,11 @@
-import BootNavBar from "./components/BootNavBar";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBarUI from "./components/NavBarUI";
 
 function App() {
   return (
     <div>
-      <BootNavBar />
+      <NavBarUI />
+      <ItemListContainer greetings = {"Bienvenidos a la Tienda Online de DAOS Collection!"}/>
     </div>
   );
 }
