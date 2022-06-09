@@ -13,7 +13,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import CartWidget from './CartWidget';
 
 
-const pages = ['Servicios', 'Nosotros', 'Contacto'];
+const pages = ['Hombres', 'Mujeres', 'Escolares'];
 //const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const NavBar = () => {

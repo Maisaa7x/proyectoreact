@@ -16,10 +16,10 @@ function ItemListContainer({greeting}) {
       const llamadoProduct = new Promise ((res, rej)=>{
         setTimeout(() => {
           res([
-          {id:1,title:'Botas Raven',description:'Altura Caña95 cm Altura puntera5 mm Altura Talón95 mm ColorNegro MaterialCuero', price:12000, pictureUrl:'./assets/img/raven.webp'},
-          {id:2,title:'Botas Slouchy',description:'Altura Caña19 cm Altura puntera5 mm Altura Talón65 mm ColorSuela MaterialGamuzón', price:24600, pictureUrl:'./assets/img/slouchy.webp'},
-          {id:3,title:'Botas Styles',description:'Altura Caña8 cm Altura puntera5 mm Altura Talón95 mm ColorNegro MaterialCharol', price:15000, pictureUrl:'./assets/img/styles.webp'},
-          {id:4,title:'Botas Bowie',description:'Altura Caña17 cm Altura puntera5 mm Altura Talón70 mm ColorSuela MaterialCuero', price:28900, pictureUrl:'./assets/img/bowie.webp'}])
+          {id:1,title:'Buzo Negro',description:'Buzo De Algodon Con Friza Interior', price:2200, pictureUrl:'./assets/img/inviernouno.jpg'},
+          {id:2,title:'Buzo Gris',description:'Buzo Polar De Alta Calidad', price:2460, pictureUrl:'./assets/img/inviernodos.jpg'},
+          {id:3,title:'Buzo Rojo',description:'Campera Jogger Roja, Ideal Para Entrenar', price:2500, pictureUrl:'./assets/img/inviernotres.jpg'},
+          {id:4,title:'Buzo Negro',description:'Campera Jogger Negra, Ideal Para Entrenar', price:2900, pictureUrl:'./assets/img/inviernocuatro.jpg'}])
         }, 2000);
 
       });
@@ -41,7 +41,7 @@ function ItemListContainer({greeting}) {
 
 
     return <>
-    <p className="parrafo">{`Hola ${greeting}, gracias por visitarnos!`}</p>
+    <h1 className="parrafo">{`Hola ${greeting}, gracias por visitar DAOS COLLECTION!`}</h1>
     <div>{loading && 'loading...'}</div>
     <div>{error && 'Hubo un error en el servidor'}</div>
     <ItemList resultado={resultado}/>
