@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import './ItemListContainer.css';
 
@@ -40,12 +40,12 @@ function ItemListContainer({greeting}) {
     
 
 
-    return <>
+    return( <>
     <h1 className="parrafo">{`Hola ${greeting}, gracias por visitar DAOS COLLECTION!`}</h1>
     <div>{loading && 'loading...'}</div>
     <div>{error && 'Hubo un error en el servidor'}</div>
     <ItemList resultado={resultado}/>
-    </>
+    </>)
   }
   
   export default ItemListContainer;
