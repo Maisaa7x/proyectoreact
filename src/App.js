@@ -1,20 +1,19 @@
+import NavBar from "./components/NavBar";
+import './App.css';
+import ItemListContainer from './components/ItemListContainer'
 import ItemCount from "./components/ItemCount";
-import ItemListContainer from "./components/ItemListContainer";
-import NavBarUI from "./components/NavBarUI";
 
 function App() {
-  
-  const onAdd = (count) => {
-    alert (`Sumaste ${count} productos al carro`); 
+
+  const onAdd  = (cantidad)=> {
+      alert(`Tiene ${cantidad} productos en el carrito`);
   }
 
-  return (
-    <div>
-      <NavBarUI />
-      <ItemListContainer greetings = {"Bienvenidos a la Tienda Online de DAOS Collection!"}/>
-      <ItemCount inicial={1} max={10} onAdd={onAdd}/>    
-    </div>
-  );
+  return <>
+  <NavBar/>
+  <ItemListContainer greeting={'Usuario'}/>
+  <ItemCount stock={5} inicial={1} onAdd={onAdd}/>
+  </>
 }
 
 export default App;

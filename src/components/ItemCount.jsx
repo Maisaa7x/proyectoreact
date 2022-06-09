@@ -1,38 +1,32 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import './ItemCount.css';
 
-const ItemCount = ({ inicial, max, onAdd }) => {
-    
-    const [count, setCount] = useState(inicial)
-    
-  const sumar = () => {
-    if(count < max){
-    setCount(count + 1)
-    }else{
-      alert ('no podes agregar mas productos crack, no tengo stock')}
-    }
+function ItemCount({ stock, inicial, onAdd}) {
+    const [cantidad, setCantidad] = useState(inicial);
 
-  const restar = () => {
-    if(count > inicial) {
-    setCount(count - 1)
-    }else{
-        alert ('no hay stock')
-    }
-    }
+    useEffect(() => {
+        if(cantidad === stock){
+        alert('Supero el stock')}
+    });
 
-    const reset = () =>{
-        setCount(inicial)
-    }
+   const sumar = () => {
+    cantidad < stock ? setCantidad(cantidad + 1) : setCantidad(cantidad + 0);
+    };
+
+    const restar = () => {
+        cantidad > 1 ? setCantidad(cantidad - 1) : setCantidad(cantidad - 0);
+    };
 
 
-    return (
-    <div>
-        <h2>{count}</h2>
-        <button onClick={sumar}>+</button>
+    return <>
+        {/* <div className='contCount'>
         <button onClick={restar}>-</button>
-        <button onClick= {() => onAdd(count)}>Agregar al carro</button>
-        <button onClick= {reset}>Reset</button>
-    </div>
-  )
+        <span className='txtCount'>{ cantidad }</span>
+        <button onClick={sumar}>+</button> 
+        <br></br>
+        <button onClick={()=> onAdd(cantidad)}>Agregar al carrito</button>
+        </div> */}
+       </>
 }
 
-export default ItemCount
+export default ItemCount;
