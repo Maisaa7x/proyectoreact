@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { useParams } from 'react-router';
-import './CharacterDetail.css';
 
 import CharacterCard from '../../components/CharacterCard/CharacterCard';
 
@@ -13,7 +11,7 @@ const CharacterDetail = () => {
 	const [character, setCharacter] = useState([]);
 
 	useEffect(() => {
-		axios(`https://breakingbadapi.com/api/characters/${id}`).then((res) =>
+		first(`https://breakingbadapi.com/api/characters/${id}`).then((res) =>
 			setCharacter(res.data)
 		);
 	}, [id]);
