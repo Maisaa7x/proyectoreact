@@ -1,38 +1,36 @@
-import React, { useState } from 'react'
-
-const ItemCount = ({ inicial, max, onAdd }) => {
-    
-    const [count, setCount] = useState(inicial)
-    
-  const sumar = () => {
-    if(count < max){
-    setCount(count + 1)
-    }else{
-      alert ('no podes agregar mas productos crack, no tengo stock')}
-    }
-
-  const restar = () => {
-    if(count > inicial) {
-    setCount(count - 1)
-    }else{
-        alert ('no hay stock')
-    }
-    }
-
-    const reset = () =>{
-        setCount(inicial)
-    }
+import React, { useEffect, useState } from 'react';
+import Button from '@mui/material/Button';
+import './ItemCount.css';
+import { Fab, Icon } from '@mui/material';
 
 
-    return (
-    <div>
-        <h2>{count}</h2>
-        <button onClick={sumar}>+</button>
-        <button onClick={restar}>-</button>
-        <button onClick= {() => onAdd(count)}>Agregar al carro</button>
-        <button onClick= {reset}>Reset</button>
-    </div>
-  )
+function ItemCount({ stock, onAdd}) {
+    const [cantidad, setCantidad] = useState(1);
+
+    useEffect(() => {
+        if(cantidad === stock){
+        alert('Supero el stock')}
+    });
+
+   const sumar = () => {
+    cantidad < stock ? setCantidad(cantidad + 1) : setCantidad(cantidad + 0);
+    };
+
+    const restar = () => {
+        cantidad > 1 ? setCantidad(cantidad - 1) : setCantidad(cantidad - 0);
+    };
+
+
+    return <>
+        <div className='contCount'>
+        <Icon onClick={restar} color="primary">remove_circle</Icon>
+        <span className='txtCount' >{ cantidad }</span>
+        <Icon onClick={sumar} color="primary">add_circle</Icon>
+        <br></br>
+        <Button onClick={()=> onAdd(cantidad)} variant="contained" className='btnCount'>Agregar al carrito</Button>
+        </div>
+       
+       </>
 }
 
-export default ItemCount
+export default ItemCount;

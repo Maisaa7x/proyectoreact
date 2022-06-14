@@ -12,26 +12,28 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import CartWidget from './CartWidget';
 
-const pages = ['Hombres', 'Mujeres', 'Escolares'];
 
-const NavBarUI = () => {
+const pages = ['Hombres', 'Mujeres', 'Escolares'];
+//const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  //const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+//   const handleOpenUserMenu = (event) => {
+//     setAnchorElUser(event.currentTarget);
+//   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+//   const handleCloseUserMenu = () => {
+//     setAnchorElUser(null);
+//   };
 
   return (
     <AppBar position="static">
@@ -47,13 +49,13 @@ const NavBarUI = () => {
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
-              fontWeight: 650,
-              letterSpacing: '.1rem',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            DAOS Collection
+           Daos Collection
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -109,7 +111,7 @@ const NavBarUI = () => {
               textDecoration: 'none',
             }}
           >
-            DAOS Collection
+            LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -122,10 +124,13 @@ const NavBarUI = () => {
               </Button>
             ))}
           </Box>
-          <CartWidget items={5}/>
+
+          <Box sx={{ flexGrow: 0 }}>
+           <CartWidget cant={10} />
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
   );
 };
-export default NavBarUI;
+export default NavBar;

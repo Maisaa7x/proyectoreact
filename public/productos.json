@@ -1,0 +1,10 @@
+[
+    {
+        "id": "1",
+        "title":"Buzo Amarillo",
+        "description": "Buzo de algodon con friza de alta calidad", 
+        "price": 1200, 
+        "pictureUrl": "./assets/img/inviernocinco.jpg"
+      }
+
+]

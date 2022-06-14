@@ -1,13 +1,12 @@
-import React from 'react'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import React from 'react';
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 
-function CartWidget({items}) {
-  return (
-    <>
-    <ShoppingCartIcon />
-    <span>{items}</span>
-    </>
-  )
+function CartWidget({cant}) {
+  return <>
+  <ShoppingCartRoundedIcon/>
+  <span>{cant}</span>
+  </>
+ 
 }
 
-export default CartWidget
+export default CartWidget;
