@@ -12,8 +12,8 @@ function App() {
 
   return <>
   <NavBar/>
-  {/* <ItemListContainer greeting={'Juan'}/>
-  <ItemCount stock={5} inicial={1} onAdd={onAdd}/> */}
+  <ItemListContainer greeting={'Daos Collection!'}/>
+  <ItemCount stock={5} inicial={1} onAdd={onAdd}/>
   <ItemDetailContainer />
   </>
 }

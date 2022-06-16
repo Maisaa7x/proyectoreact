@@ -15,10 +15,10 @@ function ItemListContainer({greeting}) {
       const getItem = new Promise ((res, rej)=>{
         setTimeout(() => {
           res([
-          {id:1,title:'Botas Raven',description:'Altura Caña95 cm Altura puntera5 mm Altura Talón95 mm ColorNegro MaterialCuero', price:12000, pictureUrl:'./assets/img/raven.webp'},
-          {id:2,title:'Botas Slouchy',description:'Altura Caña19 cm Altura puntera5 mm Altura Talón65 mm ColorSuela MaterialGamuzón', price:24600, pictureUrl:'./assets/img/slouchy.webp'},
-          {id:3,title:'Botas Styles',description:'Altura Caña8 cm Altura puntera5 mm Altura Talón95 mm ColorNegro MaterialCharol', price:15000, pictureUrl:'./assets/img/styles.webp'},
-          {id:4,title:'Botas Bowie',description:'Altura Caña17 cm Altura puntera5 mm Altura Talón70 mm ColorSuela MaterialCuero', price:28900, pictureUrl:'./assets/img/bowie.webp'}])
+          {id:1,title:'Campera Amarilla',description:'Campera de Friza, muy comoda para entrenar', price:1500, pictureUrl:'./assets/img/inviernocinco.jpg'},
+          {id:2,title:'Campera Amarilla',description:'Campera de Friza, muy comoda para entrenar', price:1500, pictureUrl:'./assets/img/inviernocinco.jpg'},
+          {id:3,title:'Campera Amarilla',description:'Campera de Friza, muy comoda para entrenar', price:1500, pictureUrl:'./assets/img/inviernocinco.jpg'},
+          {id:4,title:'Campera Amarilla',description:'Campera de Friza, muy comoda para entrenar', price:1500, pictureUrl:'./assets/img/inviernocinco.jpg'}])
         }, 2000);
       });
 
@@ -40,10 +40,10 @@ function ItemListContainer({greeting}) {
 
 
     return <>
-    <p className="parrafo">{`Hola ${greeting}, gracias por visitarnos!`}</p>
+    <p className="parrafo">{`Bienvenido a ${greeting} Gracias por visitarnos!`}</p>
     <div>{loading && 'loading...'}</div>
     <div>{error && 'Hubo un error en el servidor'}</div> 
-    <ItemList resultado={resultado}/> 
+    <ItemList className="contenedor" resultado={resultado}/> 
     </>
   }
   
