@@ -28,10 +28,10 @@ function App() {
   </Routes>
   </BrowserRouter>
 
-  <NavBar/>
+  {/*<NavBar/>
   <ItemListContainer greeting={'Daos Collection!'}/>
   <ItemCount stock={5} inicial={1} onAdd={onAdd}/>
-  <ItemDetailContainer />
+  <ItemDetailContainer />*/}
   </>
 }
 
