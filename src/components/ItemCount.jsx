@@ -7,10 +7,10 @@ import { Fab, Icon } from '@mui/material';
 function ItemCount({ stock, onAdd}) {
     const [cantidad, setCantidad] = useState(1);
 
-    useEffect(() => {
-        if(cantidad === stock){
-        alert('Supero el stock')}
-    });
+   // useEffect(() => {
+   //     if(cantidad === stock){
+   //     alert('Supero el stock')}
+   // });
 
    const sumar = () => {
     cantidad < stock ? setCantidad(cantidad + 1) : setCantidad(cantidad + 0);

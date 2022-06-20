@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 import Loading from './Loading';
 
 export default function ItemDetailContainer() {
+   
+    const {idi} = useParams();
+    console.log(idi)
+
     const [loading, setLoading] = useState();
     const [error, setError] = useState()
     const [resultado, setResultado] = useState([]);
@@ -10,27 +15,27 @@ export default function ItemDetailContainer() {
     useEffect(() => {
         setLoading(true);
         setError(false);
-        setResultado([]);
+        setResultado();
 
-        const getItem = new Promise((res, rej) => {
-            setTimeout(() => {
-                fetch('./productos.json')
-                .then((respuesta) => respuesta.json())
-                .then((data) => {
-                    console.log(data)
-                    setResultado(data.find(e => e > e.id))
-                    console.log(resultado)
+        setTimeout(() => {
+            fetch('https://run.mocky.io/v3/d6b9de55-a372-4ac6-a25b-aa27f6545309')
+            .then(res => res.json())
+            .then(res =>{
+                  setResultado(res)
+                  setResultado(res.find(item => item.id === idi))
+                  console.log(resultado)
+                  console.log(res)
                 })
-                .catch((error) => {
-                    console.log(error)
-                    setError(true)
+            .catch((error) => {
+                  console.log(error)
+                  setError(true)
                 })
-                .finally(() => {
-                    setLoading(false)
-                })
-            }, 2000);
-        })
-    }, []);
+            .finally(() => setLoading(false))
+          }, 2000);
+
+
+    }, [idi]);
+ 
 
 
 
