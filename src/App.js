@@ -9,13 +9,14 @@ import Contacto from "./components/Contacto";
 
 function App() {
 
-  const onAdd  = (cantidad)=> {
+  {/*const onAdd  = (cantidad)=> {
       alert(`Tiene ${cantidad} productos en el carrito`);
-  }
+  }*/}
 
   return <>
   <BrowserRouter>
   <NavBar/>
+  <Home/>
   <Routes>
     <Route path="/" element={<ItemListContainer/>} />
     <Route path="/home" element={<ItemListContainer/>} />
@@ -27,11 +28,6 @@ function App() {
 
   </Routes>
   </BrowserRouter>
-
-  {/*<NavBar/>
-  <ItemListContainer greeting={'Daos Collection!'}/>
-  <ItemCount stock={5} inicial={1} onAdd={onAdd}/>
-  <ItemDetailContainer />*/}
   </>
 }
 

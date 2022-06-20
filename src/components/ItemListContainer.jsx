@@ -5,7 +5,7 @@ import './ItemListContainer.css';
 import Loading from "./Loading";
 
 
-function ItemListContainer({greeting}) {
+function ItemListContainer() {
   const { urlid } = useParams();
   console.log(urlid);
   const [loading, setLoading] = useState();
@@ -41,7 +41,7 @@ function ItemListContainer({greeting}) {
 
 
     return <>
-    <p className="parrafo">{`Bienvenido a ${greeting} Gracias por visitarnos!`}</p>
+    <p className="parrafo">{`Bienvenido a Daos Collection. Gracias por visitarnos!`}</p>
     <p className="parrafo">{`Nuestros productos`}</p>
     <div>{loading && 'loading...'}</div>
     <div>{error && 'Hubo un error en el servidor'}</div> 

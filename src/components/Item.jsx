@@ -30,7 +30,7 @@ export default function Item({resultado}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">Ver más</Button>
+        <Button size="small" color="primary">Ver Mas</Button>
       </CardActions>
     </Card>
     </>
