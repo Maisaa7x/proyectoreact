@@ -1,49 +1,51 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
 import './ItemListContainer.css';
+import Loading from "./Loading";
 
 
 function ItemListContainer({greeting}) {
+  const { urlid } = useParams();
+  console.log(urlid);
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
   const [resultado, setResultado] = useState([]);
 
-    useEffect(() => {
-      setLoading(true);
-      setError(false);
-      setResultado([]);
-      const getItem = new Promise ((res, rej)=>{
-        setTimeout(() => {
-          res([
-          {id:1,title:'Campera Amarilla',description:'Campera de Friza, muy comoda para entrenar', price:1500, pictureUrl:'./assets/img/inviernocinco.jpg'},
-          {id:2,title:'Campera Amarilla',description:'Campera de Friza, muy comoda para entrenar', price:1500, pictureUrl:'./assets/img/inviernocinco.jpg'},
-          {id:3,title:'Campera Amarilla',description:'Campera de Friza, muy comoda para entrenar', price:1500, pictureUrl:'./assets/img/inviernocinco.jpg'},
-          {id:4,title:'Campera Amarilla',description:'Campera de Friza, muy comoda para entrenar', price:1500, pictureUrl:'./assets/img/inviernocinco.jpg'}])
-        }, 2000);
-      });
+  useEffect(() => {
+    setLoading(true);
+    setError(false);
+    setResultado([]);
 
-       getItem
-        .then((res)=>{
-          console.log(res)
+    setTimeout(() => {
+      fetch('./productos.json')
+        .then(res => res.json())
+        .then(res => {
           setResultado(res)
-         })
-        .catch((error)=>{
+          console.log(res)
+        })
+        .catch((error) => {
           console.log(error)
           setError(true)
-         })
-        .finally(()=>{
-          setLoading(false)
         })
-     
-    }, []);
+        .finally(() => setLoading(false))
+    }, 2000);
+
+    console.log(resultado)
+    setResultado(!urlid ? resultado : (resultado.filter(item => item.tipo == urlid)));
+    console.log(resultado)
+
+  }, [urlid]);
+
   
 
 
     return <>
     <p className="parrafo">{`Bienvenido a ${greeting} Gracias por visitarnos!`}</p>
+    <p className="parrafo">{`Nuestros productos`}</p>
     <div>{loading && 'loading...'}</div>
     <div>{error && 'Hubo un error en el servidor'}</div> 
-    <ItemList className="contenedor" resultado={resultado}/> 
+    <div>{loading || <ItemList resultado={resultado} />}</div> 
     </>
   }
   
