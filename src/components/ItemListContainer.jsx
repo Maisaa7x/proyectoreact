@@ -7,7 +7,7 @@ import Loading from "./Loading";
 
 function ItemListContainer() {
   const { urlid } = useParams();
-  console.log(urlid);
+  
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
   const [resultado, setResultado] = useState([]);
@@ -25,7 +25,6 @@ function ItemListContainer() {
           console.log(res)
         })
         .catch((error) => {
-          console.log(error)
           setError(true)
         })
         .finally(() => setLoading(false))
@@ -33,8 +32,7 @@ function ItemListContainer() {
 
     console.log(resultado)
     setResultado(!urlid ? resultado : (resultado.filter(item => item.tipo == urlid)));
-    console.log(resultado)
-
+   
   }, [urlid]);
 
   

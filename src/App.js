@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { CartContext } from "./context/CartContext";
 import './App.css';
 import ItemCart from "./components/ItemCart";
 import ItemDetailContainer from "./components/ItemDetailContainer";
@@ -11,7 +12,9 @@ function App() {
       alert(`Tiene ${cantidad} productos en el carrito`);
   }*/}
 
-  return <>
+  return ( 
+  <>
+  <CartContext>
   <BrowserRouter>
   <NavBar/>
   <Routes>
@@ -25,7 +28,9 @@ function App() {
 
   </Routes>
   </BrowserRouter>
+  </CartContext>
   </>
+  )
 }
 
 export default App;

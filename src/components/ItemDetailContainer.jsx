@@ -5,8 +5,7 @@ import Loading from './Loading';
 
 export default function ItemDetailContainer() {
    
-    const {idi} = useParams();
-    console.log(idi)
+    const {idi} = useParams()
 
     const [loading, setLoading] = useState();
     const [error, setError] = useState()
@@ -23,11 +22,8 @@ export default function ItemDetailContainer() {
             .then(res =>{
                   setResultado(res)
                   setResultado(res.find(item => item.id === idi))
-                  console.log(resultado)
-                  console.log(res)
                 })
             .catch((error) => {
-                  console.log(error)
                   setError(true)
                 })
             .finally(() => setLoading(false))
