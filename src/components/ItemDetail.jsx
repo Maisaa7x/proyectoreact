@@ -42,7 +42,7 @@ export default function ItemDetail({ resultado }) {
             <CardMedia
                 component="img"
                 sx={{ width: 280 }}
-                image={pictureUrl}
+                image={id}
                 alt="Imagen"
             />
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -83,11 +83,11 @@ export default function ItemDetail({ resultado }) {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography>Medios de pago y promociones</Typography>
+                            <Typography>Todos Los Medios De Pago</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                - Ahora 3|6|12 cuotas sin Interés. <br />
+                                - Ahora 3|6 cuotas sin Interés. <br />
                                 - Tarjetas de crédito y débito. <br />
                                 - Mercado pago
                             </Typography>
@@ -104,7 +104,7 @@ export default function ItemDetail({ resultado }) {
                         <AccordionDetails>
                             <Typography>
                                 - Envío a domicilio: A partir de 2 a 7 días hábiles. <br />
-                                - Retiro por sucursal del correo Andreani: A partir de 7 días hábiles.
+                                - Retiro por sucursal en el momento de tu compra.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>

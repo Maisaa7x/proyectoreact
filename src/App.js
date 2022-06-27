@@ -5,12 +5,11 @@ import ItemCart from "./components/ItemCart";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from './components/ItemListContainer';
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
+
 
 function App() {
-
-  {/*const onAdd  = (cantidad)=> {
-      alert(`Tiene ${cantidad} productos en el carrito`);
-  }*/}
 
   return ( 
   <>
@@ -28,6 +27,7 @@ function App() {
 
   </Routes>
   </BrowserRouter>
+  <Footer/>
   </CartContext>
   </>
   )

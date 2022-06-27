@@ -17,7 +17,7 @@ export default function ItemDetailContainer() {
         setResultado();
 
         setTimeout(() => {
-            fetch('https://run.mocky.io/v3/d6b9de55-a372-4ac6-a25b-aa27f6545309')
+            fetch('https://run.mocky.io/v3/957ef1c0-aea8-4446-8b41-37262630e46a')
             .then(res => res.json())
             .then(res =>{
                   setResultado(res)

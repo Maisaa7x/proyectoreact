@@ -1,16 +1,17 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import './ItemCount.css';
-import { Fab, Icon } from '@mui/material';
+import { Icon } from '@mui/material';
+import ShoppingCartRounded from '@mui/icons-material/ShoppingCartRounded';
 
 
 function ItemCount({ stock, onAdd}) {
     const [cantidad, setCantidad] = useState(1);
 
-   // useEffect(() => {
-   //     if(cantidad === stock){
-   //     alert('Supero el stock')}
-   // });
+    // useEffect(() => {
+    //     if(cantidad === stock){
+    //     alert('Supero el stock')}
+    // });
 
    const sumar = () => {
     cantidad < stock ? setCantidad(cantidad + 1) : setCantidad(cantidad + 0);
@@ -27,9 +28,8 @@ function ItemCount({ stock, onAdd}) {
         <span className='txtCount' >{ cantidad }</span>
         <Icon onClick={sumar} color="primary">add_circle</Icon>
         <br></br>
-        <Button onClick={()=> onAdd(cantidad)} variant="contained" className='btnCount'>Agregar al carrito</Button>
+        <Button onClick={()=> onAdd(cantidad)} variant="contained" startIcon={<ShoppingCartRounded />}>Agregar al carrito</Button>
         </div>
-       
        </>
 }
 

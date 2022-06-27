@@ -1,6 +1,38 @@
 [
     {
         "id": "1",
+        "title":"Buzo Negro",
+        "description": "Buzo de algodon con friza de alta calidad", 
+        "price": 1500, 
+        "stock": 6,
+        "pictureUrl": "./assets/img/inviernouno.jpg"
+      },
+      {
+        "id": "2",
+        "title":"Polar Gris",
+        "description": "Buzo de Polar de alta calidad", 
+        "price": 1700, 
+        "stock": 8,
+        "pictureUrl": "./assets/img/inviernodos.jpg"
+      },
+      {
+        "id": "3",
+        "title":"Buzo Rojo",
+        "description": "Buzo de algodon con friza de alta calidad", 
+        "price": 1500, 
+        "stock": 8,
+        "pictureUrl": "./assets/img/inviernotres.jpg"
+      },
+      {
+        "id": "4",
+        "title":"Buzo Negro",
+        "description": "Buzo de algodon con friza de alta calidad", 
+        "price": 1500, 
+        "stock": 8,
+        "pictureUrl": "./assets/img/inviernocuatro.jpg"
+      },
+      {
+        "id": "5",
         "title":"Buzo Amarillo",
         "description": "Buzo de algodon con friza de alta calidad", 
         "price": 1200, 

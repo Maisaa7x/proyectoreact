@@ -6,8 +6,9 @@ import Loading from "./Loading";
 
 
 function ItemListContainer() {
-  const { urlid } = useParams();
-  
+
+  const { id } = useParams();
+
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
   const [resultado, setResultado] = useState([]);
@@ -18,33 +19,26 @@ function ItemListContainer() {
     setResultado([]);
 
     setTimeout(() => {
-      fetch('./productos.json')
-        .then(res => res.json())
-        .then(res => {
-          setResultado(res)
-          console.log(res)
-        })
-        .catch((error) => {
-          setError(true)
-        })
-        .finally(() => setLoading(false))
+      fetch('https://run.mocky.io/v3/957ef1c0-aea8-4446-8b41-37262630e46a')
+      .then(res => res.json())
+      .then(res =>{
+            setResultado(res)
+            setResultado( (!id) ? res : (res.filter(item => item.tipo === id)))
+          })
+      .catch((error) => {
+            setError(true)
+          })
+      .finally(() => setLoading(false))
     }, 2000);
 
-    console.log(resultado)
-    setResultado(!urlid ? resultado : (resultado.filter(item => item.tipo == urlid)));
-   
-  }, [urlid]);
+  },[id]);
 
-  
-
-
-    return <>
-    <p className="parrafo">{`Bienvenido a Daos Collection. Gracias por visitarnos!`}</p>
+  return <>
     <p className="parrafo">{`Nuestros productos`}</p>
-    <div>{loading && 'loading...'}</div>
-    <div>{error && 'Hubo un error en el servidor'}</div> 
-    <div>{loading || <ItemList resultado={resultado} />}</div> 
-    </>
-  }
-  
-  export default ItemListContainer;
+    <div>{loading && <Loading />}</div>
+    <div>{error && 'Hubo un error en el servidor'}</div>
+    <div>{loading || <ItemList resultado={resultado} />}</div>
+  </>
+}
+
+export default ItemListContainer;
