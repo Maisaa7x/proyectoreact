@@ -1,43 +1,122 @@
 [
     {
         "id": "1",
-        "title":"Buzo Negro",
-        "description": "Buzo de algodon con friza de alta calidad", 
-        "price": 1500, 
-        "stock": 6,
-        "pictureUrl": "./assets/img/inviernouno.jpg"
+        "name":"Botas Raven",
+        "category":"botas",
+        "color":"negro",
+        "description": "Altura Caña95 cm Altura puntera5 mm Altura Talón95 mm ColorNegro MaterialCuero", 
+        "price": 12000, 
+        "stock": 8, 
+        "image": "./assets/img/raven.webp"
       },
       {
         "id": "2",
-        "title":"Polar Gris",
-        "description": "Buzo de Polar de alta calidad", 
-        "price": 1700, 
-        "stock": 8,
-        "pictureUrl": "./assets/img/inviernodos.jpg"
+        "name":"Botas Slouchy",
+        "category":"botas",
+        "color":"suela",
+        "description": "Altura Caña19 cm Altura puntera5 mm Altura Talón65 mm ColorSuela MaterialGamuzón", 
+        "price": 24600, 
+        "stock": 6, 
+        "image": "./assets/img/slouchy1.webp"
       },
       {
         "id": "3",
-        "title":"Buzo Rojo",
-        "description": "Buzo de algodon con friza de alta calidad", 
-        "price": 1500, 
-        "stock": 8,
-        "pictureUrl": "./assets/img/inviernotres.jpg"
+        "name":"Botas Styles",
+        "category":"botas",
+        "color":"negro",
+        "description": "Altura Caña8 cm Altura puntera5 mm Altura Talón95 mm ColorNegro MaterialCharol", 
+        "price": 15000, 
+        "stock": 34, 
+        "image": "./assets/img/styles.webp"
       },
       {
         "id": "4",
-        "title":"Buzo Negro",
-        "description": "Buzo de algodon con friza de alta calidad", 
-        "price": 1500, 
-        "stock": 8,
-        "pictureUrl": "./assets/img/inviernocuatro.jpg"
+        "name":"Botas Bowie",
+        "category":"botas",
+        "color":"suela",
+        "description": "Altura Caña17 cm Altura puntera5 mm Altura Talón70 mm ColorSuela MaterialCuero", 
+        "price": 26000, 
+        "stock": 23, 
+        "image": "./assets/img/bowie.webp"
       },
       {
         "id": "5",
-        "title":"Buzo Amarillo",
-        "description": "Buzo de algodon con friza de alta calidad", 
-        "price": 1200, 
-        "stock": 8,
-        "pictureUrl": "./assets/img/inviernocinco.jpg"
+        "name":"Stilleto Hardest",
+        "category":"sandalias",
+        "color":"negro",
+        "description": "Altura puntera58 mm Altura Talón120 mm ColorNegro MaterialCharol", 
+        "price": 19000, 
+        "stock": 12, 
+        "image": "./assets/img/hardest.webp"
+      },
+      {
+        "id": "6",
+        "name":"sandalias Higher",
+        "category":"sandalias",
+        "color":"nude",
+        "description": "Altura puntera30 mm Altura Talón125 mm ColorNude MaterialCuero", 
+        "price":14800, 
+        "stock": 3, 
+        "image": "./assets/img/higher.webp"
+      },
+      {
+        "id": "7",
+        "name":"sandalias Charmest",
+        "category":"sandalias",
+        "color":"negro",
+        "description": "Altura Caña8 cm Altura puntera3 mm Altura Talón60 mm ColorNegro MaterialCharol", 
+        "price":13800, 
+        "stock": 6, 
+        "image": "./assets/img/charmest.webp"
+      },
+      {
+        "id": "8",
+        "name":"sandalias Dumont",
+        "category":"sandalias",
+        "color":"plateado",
+        "description": "Altura puntera3 mm Altura Talón105mm ColorPlateado MaterialFaux Leather", 
+        "price":13900, 
+        "stock": 12, 
+        "image": "./assets/img/dumont.webp"
+      },
+      {
+        "id": "9",
+        "name":"sandalias Tonic",
+        "category":"sandalias",
+        "color":"nude",
+        "description": "Altura puntera7 mm Altura Talón65 mm ColorNude MaterialCuero", 
+        "price":9900, 
+        "stock": 9, 
+        "image": "./assets/img/tonic.webp"
+      },
+      {
+        "id": "10",
+        "name":"Zapatilla Lust",
+        "category":"zapatillas",
+        "color":"negro",
+        "description": "Altura Caña12 cm Altura puntera20 mm Altura Talón40 mm ColorNegro MaterialTejido", 
+        "price":26900, 
+        "stock": 23, 
+        "image": "./assets/img/lust.webp"
+      },
+      {
+        "id": "11",
+        "name":"Zapatilla Wind",
+        "category":"zapatillas",
+        "color":"negro",
+        "description": "Altura Caña7 cm Altura puntera35 mm Altura Talón65 mm ColorNegro MaterialMesh", 
+        "price":24200, 
+        "stock": 8, 
+        "image": "./assets/img/wind.webp"
+      },
+      {
+        "id": "12",
+        "name":"Zapatilla Motive",
+        "category":"zapatillas",
+        "color":"blanco",
+        "description": "Altura Caña6 cm Altura puntera35 mm Altura Talón40 mm ColorBlanco MaterialCuero", 
+        "price":14200, 
+        "stock": 7, 
+        "image": "./assets/img/motive.webp"
       }
-
 ]

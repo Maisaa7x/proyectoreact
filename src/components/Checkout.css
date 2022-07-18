@@ -1,0 +1,107 @@
+  /* h1 {
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+  } */
+  
+  .titleCheck{
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+  }
+
+  .formCheckout {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .msjError {
+    color: #bf1650;
+  }
+  
+  .msjError::before {
+    display: inline;
+    content: "⚠ ";
+  }
+  
+  .formInput {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .formInput:disabled {
+    opacity: 0.4;
+  }
+  
+  /* label {
+    line-height: 2;
+    text-align: left;
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+  } */
+  
+  
+  .btnCkeckout {
+    background: #ec5990;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin: 15px;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    appearance: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  .btnCkeckout:hover {
+    background: #bf1650;
+  }
+
+  .btnCkeckout:active {
+    transition: 0.3s all;
+    transform: translateY(3px);
+    border: 1px solid transparent;
+    opacity: 0.8;
+  }
+  
+ 
+  .btnCkeckout:hover {
+    transition: 0.3s all;
+    -webkit-appearance: none;
+  }
+
+  .btnCkeckout {
+    -webkit-appearance: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  hr {
+    margin-top: 30px;
+  }
+  
+  input[type=number]::-webkit-outer-spin-button,
+
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+   }
+
+   input[type=number] {
+    -moz-appearance:textfield;
+   }

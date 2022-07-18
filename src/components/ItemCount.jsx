@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
-import Button from '@mui/material/Button';
 import './ItemCount.css';
 import { Icon } from '@mui/material';
 import ShoppingCartRounded from '@mui/icons-material/ShoppingCartRounded';
+import { Link } from 'react-router-dom';
+import ItemListContainer from './ItemListContainer';
 
 
 function ItemCount({ stock, onAdd}) {
     const [cantidad, setCantidad] = useState(1);
-
-    // useEffect(() => {
-    //     if(cantidad === stock){
-    //     alert('Supero el stock')}
-    // });
 
    const sumar = () => {
     cantidad < stock ? setCantidad(cantidad + 1) : setCantidad(cantidad + 0);
@@ -21,14 +17,22 @@ function ItemCount({ stock, onAdd}) {
         cantidad > 1 ? setCantidad(cantidad - 1) : setCantidad(cantidad - 0);
     };
 
+    if(stock <= 0){
+        return (
+            <>
+            <Link to='/' element={<ItemListContainer/>}className='contCount'><button className='btnCkeckout'>Sin stock</button></Link>
+            </>
+        )
+    }
+
 
     return <>
         <div className='contCount'>
-        <Icon onClick={restar} color="primary">remove_circle</Icon>
+        <Icon onClick={restar} className='icon' >remove_circle</Icon>
         <span className='txtCount' >{ cantidad }</span>
-        <Icon onClick={sumar} color="primary">add_circle</Icon>
+        <Icon onClick={sumar} className='icon' >add_circle</Icon>
         <br></br>
-        <Button onClick={()=> onAdd(cantidad)} variant="contained" startIcon={<ShoppingCartRounded />}>Agregar al carrito</Button>
+        <button className='btnCkeckout' onClick={()=> onAdd(cantidad)} ><ShoppingCartRounded /> Agregar al carrito</button>
         </div>
        </>
 }

@@ -1,15 +1,11 @@
 .boxNav {
-    background-color: rgba(192, 3, 239, 0.826);
+    background-color: black;
 }
 
 .linkNav {
     text-decoration: none;
     margin: 20px;
     color: white;
-}
-
-.boxLink {
-    margin-right: 100px;
 }
 
 .linkMobile {

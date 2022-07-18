@@ -2,12 +2,13 @@ import React from 'react'
 import Item from './Item';
 
 
-function ItemList({resultado}) {
+function ItemList({resulted}) {
+
   return (
-    <div style={{ display: 'flex', margin: '20px' }}>
-        {resultado?.map(resultado => <Item key={resultado.id} resultado={resultado}/>)}
+    <div style={{ display: 'flex', margin: '20px' , flexWrap: 'wrap', justifyContent:'center'}}>
+        {resulted?.map(resulted => <Item key={resulted.id} resulted={resulted}/>)}
     </div>
   )
 }
 
-export default ItemList;
+export default ItemList;  

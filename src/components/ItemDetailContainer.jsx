@@ -2,43 +2,40 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 import Loading from './Loading';
+import {doc , getDoc , getFirestore } from 'firebase/firestore';
+import Mistake from './Mistake';
+
 
 export default function ItemDetailContainer() {
-   
-    const {idi} = useParams()
 
-    const [loading, setLoading] = useState();
-    const [error, setError] = useState()
-    const [resultado, setResultado] = useState([]);
+    const {idi} = useParams();
+
+    const [loading, setLoading] = useState(Boolean);
+    const [error, setError] = useState(Boolean)
+    const [resulted, setResulted] = useState({});
 
     useEffect(() => {
         setLoading(true);
         setError(false);
-        setResultado();
+        setResulted({});
 
-        setTimeout(() => {
-            fetch('https://run.mocky.io/v3/957ef1c0-aea8-4446-8b41-37262630e46a')
-            .then(res => res.json())
-            .then(res =>{
-                  setResultado(res)
-                  setResultado(res.find(item => item.id === idi))
-                })
-            .catch((error) => {
-                  setError(true)
-                })
-            .finally(() => setLoading(false))
-          }, 2000);
+        const db = getFirestore();
+        const productFB = doc(db , 'products', idi);
 
+        getDoc(productFB).then((snapshot)=>{
+             setResulted({...snapshot.data(), id: snapshot.id })
+        }).catch((error) => {
+                      setError(true)
+            }).finally(() => setLoading(false))
 
     }, [idi]);
- 
-
-
 
     return <>
-        <div>{loading && <Loading/>}</div>
-        <div>{error && 'Hubo un error en el servidor'}</div>
-        <div>{loading || <ItemDetail resultado={resultado}/>}</div>
+        <div>{loading && <Loading />}</div>
+        <div>{error && <Mistake/>}</div>
+        <div>{loading || <ItemDetail resulted={resulted}/>}</div>
     </>
 }
+
+
 
