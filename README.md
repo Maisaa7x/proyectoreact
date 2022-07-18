@@ -1,12 +1,8 @@
-BAKS: E-commerce con React 
-Video GIF del proyecto
-
-https://giphy.com/gifs/WDphBdvBIMPsLfPa6w
+Daos Collection: E-commerce con React 
 
 Cómo correr este proyecto:
-Este proyecto se encuentra deployeado en Vercel, podés ingresar y probarlo en el siguiente link:
+Este proyecto se encuentra deployeado en Firebase, podés ingresar y probarlo en el siguiente link:
 
-https://proyecto-buzzinello.vercel.app/
 
 Para correrlo de manera local, seguí los siguientes pasos:
 
@@ -34,4 +30,4 @@ SweetAlert: "sweetalert": "^2.1.2"
 Libreria para alertas con estilos graficos. 
 
 Firebase: "firebase": "9.8.4" 
-Plataforma diseñada y creada por Google, teniendo como principal función desarrollar y facilitar la creación de base de datos y servidor para laimplementacion de la pagina web. 
+Plataforma diseñada y creada por Google, teniendo como principal función desarrollar y facilitar la creación de base de datos y servidor para la implementacion de la pagina web. 

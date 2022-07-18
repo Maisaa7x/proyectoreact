@@ -1,122 +1,72 @@
 [
     {
         "id": "1",
-        "name":"Botas Raven",
-        "category":"botas",
+        "name":"Chaleco Polar",
+        "category":"Chalecos",
         "color":"negro",
-        "description": "Altura Caña95 cm Altura puntera5 mm Altura Talón95 mm ColorNegro MaterialCuero", 
-        "price": 12000, 
-        "stock": 8, 
-        "image": "./assets/img/raven.webp"
+        "description": "Chaleco Polar", 
+        "price": 1500, 
+        "stock": 20, 
+        "image": "./assets/img/IMG-20210803-WA0016.jpg"
       },
       {
         "id": "2",
-        "name":"Botas Slouchy",
-        "category":"botas",
-        "color":"suela",
-        "description": "Altura Caña19 cm Altura puntera5 mm Altura Talón65 mm ColorSuela MaterialGamuzón", 
-        "price": 24600, 
-        "stock": 6, 
-        "image": "./assets/img/slouchy1.webp"
+        "name":"Campera Roja",
+        "category":"Camperas",
+        "color":"rojo",
+        "description": "Buzo con cierre sin friza", 
+        "price": 1300, 
+        "stock": 20, 
+        "image": "./assets/img/IMG-20210803-WA0017.jpg"
       },
       {
         "id": "3",
-        "name":"Botas Styles",
-        "category":"botas",
-        "color":"negro",
-        "description": "Altura Caña8 cm Altura puntera5 mm Altura Talón95 mm ColorNegro MaterialCharol", 
-        "price": 15000, 
-        "stock": 34, 
-        "image": "./assets/img/styles.webp"
+        "name":"Polera",
+        "category":"Poleras",
+        "color":"beige",
+        "description": "Polera Termica", 
+        "price": 1000, 
+        "stock": 20, 
+        "image": "./assets/img/IMG-20210803-WA0018.jpg"
       },
       {
         "id": "4",
-        "name":"Botas Bowie",
-        "category":"botas",
-        "color":"suela",
-        "description": "Altura Caña17 cm Altura puntera5 mm Altura Talón70 mm ColorSuela MaterialCuero", 
-        "price": 26000, 
-        "stock": 23, 
-        "image": "./assets/img/bowie.webp"
+        "name":"Remera Manga Larga",
+        "category":"Remeras",
+        "color":"Marron",
+        "description": "Remera De Algodon Manga Larga", 
+        "price": 900, 
+        "stock": 20, 
+        "image": "./assets/img/IMG-20210803-WA0019.jpg"
       },
       {
         "id": "5",
-        "name":"Stilleto Hardest",
-        "category":"sandalias",
-        "color":"negro",
-        "description": "Altura puntera58 mm Altura Talón120 mm ColorNegro MaterialCharol", 
-        "price": 19000, 
-        "stock": 12, 
-        "image": "./assets/img/hardest.webp"
+        "name":"Buzo Deportivo",
+        "category":"Camperas",
+        "color":"gris",
+        "description": "Buzo deportivo con cierre", 
+        "price": 1000, 
+        "stock": 20, 
+        "image": "./assets/img/IMG-20210803-WA0020.jpg"
       },
       {
         "id": "6",
-        "name":"sandalias Higher",
-        "category":"sandalias",
-        "color":"nude",
-        "description": "Altura puntera30 mm Altura Talón125 mm ColorNude MaterialCuero", 
-        "price":14800, 
-        "stock": 3, 
-        "image": "./assets/img/higher.webp"
+        "name":"Remera Manga Larga",
+        "category":"Remeras",
+        "color":"rojo",
+        "description": "Remera De Algodon Manga Larga", 
+        "price":900, 
+        "stock": 20, 
+        "image": "./assets/img/IMG-20210803-WA0021.jpg"
       },
       {
         "id": "7",
-        "name":"sandalias Charmest",
-        "category":"sandalias",
-        "color":"negro",
-        "description": "Altura Caña8 cm Altura puntera3 mm Altura Talón60 mm ColorNegro MaterialCharol", 
-        "price":13800, 
-        "stock": 6, 
-        "image": "./assets/img/charmest.webp"
-      },
-      {
-        "id": "8",
-        "name":"sandalias Dumont",
-        "category":"sandalias",
-        "color":"plateado",
-        "description": "Altura puntera3 mm Altura Talón105mm ColorPlateado MaterialFaux Leather", 
-        "price":13900, 
-        "stock": 12, 
-        "image": "./assets/img/dumont.webp"
-      },
-      {
-        "id": "9",
-        "name":"sandalias Tonic",
-        "category":"sandalias",
-        "color":"nude",
-        "description": "Altura puntera7 mm Altura Talón65 mm ColorNude MaterialCuero", 
-        "price":9900, 
-        "stock": 9, 
-        "image": "./assets/img/tonic.webp"
-      },
-      {
-        "id": "10",
-        "name":"Zapatilla Lust",
-        "category":"zapatillas",
-        "color":"negro",
-        "description": "Altura Caña12 cm Altura puntera20 mm Altura Talón40 mm ColorNegro MaterialTejido", 
-        "price":26900, 
-        "stock": 23, 
-        "image": "./assets/img/lust.webp"
-      },
-      {
-        "id": "11",
-        "name":"Zapatilla Wind",
-        "category":"zapatillas",
-        "color":"negro",
-        "description": "Altura Caña7 cm Altura puntera35 mm Altura Talón65 mm ColorNegro MaterialMesh", 
-        "price":24200, 
-        "stock": 8, 
-        "image": "./assets/img/wind.webp"
-      },
-      {
-        "id": "12",
-        "name":"Zapatilla Motive",
-        "category":"zapatillas",
-        "color":"blanco",
-        "description": "Altura Caña6 cm Altura puntera35 mm Altura Talón40 mm ColorBlanco MaterialCuero", 
-        "price":14200, 
-        "stock": 7, 
-        "image": "./assets/img/motive.webp"
+        "name":"Remera Manga Larga",
+        "category":"Remeras",
+        "color":"Vicha",
+        "description": "Remera De Algodon Manga Larga", 
+        "price":900, 
+        "stock": 20, 
+        "image": "./assets/img/IMG-20210803-WA0022.jpg"
       }
 ]

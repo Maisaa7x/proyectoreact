@@ -33,7 +33,7 @@ export default function Item({resulted}) {
         </CardContent>
       </CardActionArea>
       <CardActions sx={{ justifyContent: 'center' }}>
-      <Link to={'/item/'+ id} element={<ItemDetailContainer/>}><button className='btnCkeckout'>Ver más</button></Link>
+      <Link to={'/item/'+ id} element={<ItemDetailContainer/>}><button className='btnCkeckout'>Comprar</button></Link>
       </CardActions>
     </Card>
     </>

@@ -15,12 +15,12 @@ import ItemDetail from "./components/ItemDetail";
 function App() {
 
   const firebaseConfig = {
-    apiKey: "AIzaSyATPEx6MNa_VMXJsfaExJM55X9z2Q9pr3U",
-    authDomain: "react-baks.firebaseapp.com",
-    projectId: "react-baks",
-    storageBucket: "react-baks.appspot.com",
-    messagingSenderId: "984606847079",
-    appId: "1:984606847079:web:c7e4191f2c59f58a0ba4c2"
+    apiKey: "AIzaSyA6sdfx5RiukJAkUOta7en16F0iOqa_YfY",
+    authDomain: "proyectoreactjscoder.firebaseapp.com",
+    projectId: "proyectoreactjscoder",
+    storageBucket: "proyectoreactjscoder.appspot.com",
+    messagingSenderId: "724538558666",
+    appId: "1:724538558666:web:3f9cf342971d85bbc70c33"
   };
   
   initializeApp(firebaseConfig);
@@ -34,7 +34,7 @@ function App() {
     <Route path="/" element={<ItemListContainer/>} />
     <Route path="/home" element={<ItemListContainer/>} />
     <Route path="/productos" element={<ItemListContainer/>} />
-    <Route path="/categoria/:id" element={<ItemListContainer/>} />
+    <Route path="/category/:id" element={<ItemListContainer/>} />
     <Route path="/item/:idi" element={<ItemDetailContainer/>} />
     <Route path="/item/:idi" element={<ItemDetail/>} />
     <Route path="/cart" element={<ItemCart/>}/>

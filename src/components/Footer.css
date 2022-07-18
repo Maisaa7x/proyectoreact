@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: dimgrey;
+    background-color: rgba(242, 114, 227, 0.843);
     color: #ffffff;
     padding: 1px;
 }

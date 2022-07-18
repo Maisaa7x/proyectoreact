@@ -40,10 +40,10 @@ function NavBar (props) {
       </Typography>
       <Divider />
       <List>
-                  <Link to="/productos" className='linkMobile'> PRODUCTOS </Link>
-                  <Link to="/categoria/botas" className='linkMobile'> BOTAS </Link>
-                  <Link to="/categoria/sandalias" className='linkMobile'> SANDALIAS </Link>
-                  <Link to="/categoria/zapatillas" className='linkMobile'> ZAPATILLAS </Link>
+      <Link to="/productos" className='linkMobile'> PRODUCTOS </Link>
+                  <Link to="/category/Remeras" className='linkMobile'> REMERAS </Link>
+                  <Link to="/category/Camperas" className='linkMobile'> CAMPERAS </Link>
+                  <Link to="/category/Chalecos" className='linkMobile'> CHALECOS </Link>
          </List>
     </Box>
   );
@@ -73,9 +73,9 @@ function NavBar (props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }} className='boxLink'>
                   <Link to="/productos" className='linkNav'> PRODUCTOS </Link>
-                  <Link to="/categoria/botas" className='linkNav'> BOTAS </Link>
-                  <Link to="/categoria/sandalias" className='linkNav'> SANDALIAS </Link>
-                  <Link to="/categoria/zapatillas" className='linkNav'> ZAPATILLAS </Link>
+                  <Link to="/category/Remeras" className='linkNav'> REMERAS </Link>
+                  <Link to="/category/Camperas" className='linkNav'> CAMPERAS </Link>
+                  <Link to="/category/Chalecos" className='linkNav'> CHALECOS </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

@@ -54,7 +54,7 @@ function ItemListContainer() {
 
   return (
     <>
-      <p className="parrafo">{`Nuestros productos`}</p>
+      <p className="parrafo">{`¡Bienvenidos a DAOS Collection!`}</p>
       <div>{loading && <Loading />}</div>
       <div>{error && <Mistake/>}</div>
       <div>{loading || <ItemList resulted={resulted} />}</div>

@@ -52,16 +52,16 @@ export default function Footer() {
         </Box>
       </div>
       <div className="footerLegales">
-        <p>Copyright © 2022 | </p>
+        <p>Copyright © 2022 | DAOS Collection </p>
         <a
-          href="https://www.linkedin.com/in/melisa-buzzinello/"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={logoLink} alt={"logo"} className="footerLogo" />
         </a>
         <a
-          href="https://github.com/MeliBuzzinello"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
         >
